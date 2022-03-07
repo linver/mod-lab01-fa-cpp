@@ -17,9 +17,9 @@ unsigned int faStr1(const char *str) {
                 k++;
             }
         if (only_letters == k) {
-            separator = true;
             words_amount++;
         }
+        separator = true;
         } else if (separator == true && str[i] == ' ') {
             separator = false;
         }
@@ -46,10 +46,10 @@ unsigned int faStr2(const char *str) {
                 k++;
                 }
                 if (letters == k) {
-                    separator = true;
                     words_amount++;
                 }
             }
+            separator = true;
         } else if (separator == true && str[i] == ' ') {
             separator = false;
         }
